@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Argus">
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <!-- all-seeing eye (Argus) -->
+  <path d="M72 256 C150 152, 362 152, 440 256 C362 360, 150 360, 72 256 Z"
+        fill="none" stroke="#e2e8f0" stroke-width="22" stroke-linejoin="round"/>
+  <!-- iris -->
+  <circle cx="256" cy="256" r="70" fill="#2dd4bf"/>
+  <!-- verified checkmark as the pupil -->
+  <path d="M226 256 l20 22 l40 -50" fill="none" stroke="#0f172a"
+        stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
