@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Border AI Governance Auditor — verifiable evidence, not checklists</title>
+<meta name="description" content="A regulator-grade AI-governance auditor: every finding is signed, reproducible, and independently verifiable.">
+<style>
+  :root{--ink:#0f172a;--mut:#475569;--line:#e2e8f0;--accent:#2563eb;--bg:#f8fafc}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{background:var(--bg);border-bottom:1px solid var(--line);padding:64px 0 56px}
+  h1{font-size:34px;line-height:1.2;margin:0 0 14px}
+  .sub{font-size:19px;color:var(--mut);margin:0 0 24px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:11px 18px;border-radius:8px;font-weight:600;margin-right:10px}
+  .cta.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:22px;margin:0 0 16px}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px}
+  pre{background:var(--ink);color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{border:1px solid var(--line);border-radius:8px;padding:14px}
+  .card b{display:block;margin-bottom:4px}
+  .mut{color:var(--mut)}
+  ol{padding-left:20px}
+  footer{padding:32px 0;color:var(--mut);font-size:14px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>AI-governance auditing that produces <em>evidence</em>, not assertions.</h1>
+  <p class="sub">Every finding is cryptographically <b>signed</b>, <b>reproducible</b>, and
+  <b>verifiable by an outsider</b> — a court, a regulator, or the audited party.</p>
+  <a class="cta" href="https://github.com/argusproof-ai/argus">Get it on GitHub</a>
+  <a class="cta ghost" href="#run">See it run</a>
+</div></header>
+
+<section><div class="wrap">
+  <h2>The problem</h2>
+  <p>The EU AI Act, NYC Local Law 144, the Colorado AI Act, China's algorithm rules,
+  and Japan's guidelines each impose different, moving duties on the same AI system.
+  Most "compliance" tooling answers with a checklist or a slide — assertions you
+  take on faith. This answers with evidence anyone can verify.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Seven checks, one pluggable harness</h2>
+  <div class="grid">
+    <div class="card"><b>Bias (LL144 four-fifths)</b><span class="mut">per-group + intersectional impact ratio on your own decisions.</span></div>
+    <div class="card"><b>Disparate-treatment probe</b><span class="mut">audits the <em>model itself</em> via a correspondence test.</span></div>
+    <div class="card"><b>Privacy (k-anonymity)</b><span class="mut">re-identification risk over quasi-identifiers.</span></div>
+    <div class="card"><b>Recommender amplification</b><span class="mut">exposure concentration + group disparity.</span></div>
+    <div class="card"><b>LLM safety / refusal</b><span class="mut">harmful-prompt refusal vs benign over-refusal.</span></div>
+    <div class="card"><b>Accuracy / hallucination</b><span class="mut">known-answer + false-premise reliability.</span></div>
+    <div class="card"><b>Prompt-injection robustness</b><span class="mut">resistance to instructions hidden in content.</span></div>
+    <div class="card"><b>+ your own</b><span class="mut">a new check drops in as one class.</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>What makes a finding governable</h2>
+  <ol>
+    <li><b>Point-in-time law</b> — audited against the statute as it stood on a given date.</li>
+    <li><b>Signed, hash-chained ledger</b> — re-derive every hash and signature yourself.</li>
+    <li><b>Warrant-gated chain of custody</b> — no intake without a valid, served authorization.</li>
+    <li><b>Anti-cherry-pick proofs</b> — commit-then-sample detects omitted or skewed evidence.</li>
+  </ol>
+  <p class="mut">One chain ties it together: authorization → commitment → custody → finding.</p>
+</div></section>
+
+<section id="run"><div class="wrap">
+  <h2>See the whole chain in one command</h2>
+<pre>pip install -r requirements.txt
+./demo.sh
+python verify_attestation.py --show   # verify it yourself</pre>
+  <p class="mut">Runs on real public data (CFPB HMDA, the AI Incident Database) and real models.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Honest about its limits</h2>
+  <p>Code can make the exercise of authority auditable; it cannot create it. This does
+  not grant statutory power to compel a company's data, and it cannot prove a
+  committed population is the true universe without compelled access or external
+  cross-checks. It is the instrument that's ready the moment that authority
+  exists — and, short of that, the most rigorous pre-deployment auditor available.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>For auditors, compliance teams, and regulators</h2>
+  <p>Open source (Apache-2.0). Free pilots available.
+  <a href="https://github.com/argusproof-ai/argus">GitHub</a> · <a href="mailto:argusproof.ai@gmail.com">argusproof.ai@gmail.com</a></p>
+</div></section>
+
+<footer><div class="wrap">
+  Informational compliance-triage aid, not legal advice. The official text of each
+  cited instrument governs.
+</div></footer>
+</body>
+</html>
