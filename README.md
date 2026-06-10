@@ -363,3 +363,15 @@ score) and one or more demographic columns. See `data/bias_audit_template.csv`.
 | `data/ai_incidents_snapshot.csv` | Frozen real incident snapshot (provenance recorded) |
 | `fetch_hmda.py` | Builds the real HMDA mortgage demo dataset from the CFPB API |
 | `data/hmda_demo_sample.csv` | Frozen real HMDA demo slice (provenance recorded) |
+
+## License & attribution
+
+Licensed under the **Apache License 2.0** — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+You may use, modify, and redistribute this software, **including commercially**, but
+you must **retain the copyright notice, the `NOTICE` file, and attribution to
+Argusproof.ai** (Apache-2.0 §4). "Argus" and "Argusproof.ai" are project/brand names.
+
+Provenance is built in: the public, timestamped commit history and the signed
+attestation ledger (`data/evidence_ledger.jsonl` + the published Ed25519 key)
+establish authorship — and findings signed by the project's key cannot be forged by
+a fork using a different key.
